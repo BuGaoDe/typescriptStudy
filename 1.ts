@@ -23,3 +23,28 @@ array.push(true)
 
 //ts 指定类型后就不可以更改数据的具体类型
 //但是可以推断具体的类型 数组，对象可以推断内部具体的数据类型 
+//而不指定数据类型的对象就无法赋值
+let obj2 = []
+console.log(obj2 instanceof Object);//Object
+//ts 的数据类型和 js 差不多 
+//boolean number 字符串 
+//字符串一样可以 用 模板字符串 `${}`
+//array一样是引用类型
+//元组 Tuple
+//元组类似于数组，可以装任何类型的数据 
+let tub: [string, number]
+tub = ['123', 456]
+console.log(tub[0]);
+console.log(typeof tub);
+//枚举类型 可以定义自己的数据类型
+//any类型 为一个不确定的数据类型指定 类型
+let anyway: any = 123
+console.log(typeof anyway);
+//void类型 
+//void类型可以赋值 undefined 和 null
+//这两个值赋值个任何值
+//never表示永远不存在的值 never可以赋值为任意值
+//但任何值都不可以赋值给never， 除了never本身
+// object表示非原始类型，也就是除number，string，boolean，symbol，null或undefined之外的类型。
+
+//webpack
