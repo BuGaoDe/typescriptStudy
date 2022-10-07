@@ -1,8 +1,9 @@
 
-console.log(sum(13, '56'));
+console.log(sum(13, '56')); //1356
 
-//元素赋值以后不能再更改
+//元素赋值以后不能再更改类型（强类型）
 let num = 100
+num = 200
 //num 不能再赋值其他类型
 
 //此时 a 和 b 可以传递任何值， 因为没有指定
@@ -47,4 +48,4 @@ console.log(typeof anyway);
 //但任何值都不可以赋值给never， 除了never本身
 // object表示非原始类型，也就是除number，string，boolean，symbol，null或undefined之外的类型。
 
-//webpack
+
