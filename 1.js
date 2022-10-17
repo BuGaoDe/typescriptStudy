@@ -44,3 +44,5 @@ console.log(typeof anyway);
 //never表示永远不存在的值 never可以赋值为任意值
 //但任何值都不可以赋值给never， 除了never本身
 // object表示非原始类型，也就是除number，string，boolean，symbol，null或undefined之外的类型。
+let arr = [1, '1', {obj: 'obj'}]
+console.log(arr)
